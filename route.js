@@ -43,8 +43,8 @@ Router.route('/callnumber/:id', function () {
   var params = this.params; 
   var id = params.id;
    // Configure the Twilio client
- twilio = Twilio('AC99423bdfe5fb929f7ef2a7b9b9c56193', 
-  '3a82a0ada40a21ce2b89288f642068c9');
+ twilio = Twilio('YOUR_AUTH_ID', 
+  'YOUR_AUTH_TOKEN');
 
   twilio.makeCall({
     to:id,
